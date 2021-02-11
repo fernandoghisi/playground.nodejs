@@ -2,8 +2,9 @@
   "name": "playground.nodejs",
   "version": "0.0.1",
   "description": "A playground to practice Node.js",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon src/express/ejs/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/fernandoghisi/playground.nodejs/issues"
   },
-  "homepage": "https://github.com/fernandoghisi/playground.nodejs#readme"
+  "homepage": "https://github.com/fernandoghisi/playground.nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
 }
